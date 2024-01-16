@@ -1,0 +1,49 @@
+@import "_variables.scss";
+
+/* wierd bar thing
+*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    color: var(--textCol);
+    user-select: none;
+    background: var(--tabBgCol);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.lowerBg {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    bottom: 0;
+    height: calc(100vh - var(--topBarThickness));
+    background: var(--pgBgCol);
+}
+
+.seperationBar {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    outline: none;
+    padding: none;
+    border: 0.175rem solid #fff;
+    filter:
+        drop-shadow(0px -2px 8px #fff)
+        drop-shadow(0px -8px 10px rgba(255, 255, 255, 0.25));
+    top: var(--topBarThickness);
+    background: var(--pgBgCol);
+}
+
+.mainWindow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: var(--uniMargin, 1rem);
+    width: calc(100vw - var(--uniMargin, 1rem) * 2);
+}

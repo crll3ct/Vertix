@@ -1,0 +1,16 @@
+Add uploader for background color, and allow you to change the proportions and center v. stretch v. fill etc.
+
+add css themes, basically remake what cryphr did
+
+add eruda, so javascript:(function () { var script = document.createElement('script'); script.src="https://cdn.jsdelivr.net/npm/eruda"; document.body.append(script); script.onload = function () { eruda.init(); } })(); maybe change the cdn to something in this repo. Ion kno
+
+add percentage and time in one line
+
+add back and foward arrows
+
+add custom local urls, i.e. cryphr://home, might check for https://, http:// and cryphr://. If cryphr:// check if the trim of the url entered is part of home, history, settings, etc.
+
+
+CHANGELOG:
+
+Have every couple of commits be a new 0.0.x version. Will also have a link to the last commit in the change log on github. After I make a commit, put what I was listenning to on spotify, cus why not

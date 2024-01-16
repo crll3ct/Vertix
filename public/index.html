@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vertix</title>
+        <script type="text/javascript">
+            window.onload = function () {
+                var userResponse = confirm("Would you like to open cloaked?");
+
+                if (userResponse) {
+                    var win = window.open();
+                    var url = "app.html";
+                    var iframe = win.document.createElement("iframe");
+                    iframe.style.position = "absolute";
+                    iframe.style.left = "0";
+                    iframe.style.top = "0";
+                    iframe.style.width = "100vw";
+                    iframe.style.height = "100vh";
+                    iframe.style.border = "none";
+                    iframe.style.margin = "0";
+                    iframe.style.padding = "0";
+                    iframe.src = url;
+                    win.document.body.appendChild(iframe);
+                    win.document.body.style.overflow = "hidden";
+                    window.location.href = "https://classroom.google.com";
+                    yourScriptFunction();
+                } else {
+                    window.location.href = "app.html";
+                }
+            };
+
+            function yourScriptFunction() {
+                // Your script goes here
+                console.log("Running your script...");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>
+            Hey! Your seeing this because you either dont have popups enabled, or javascript enabled. Please enable both of those things then reload.
+        </h1>
+    </body>
+</html>

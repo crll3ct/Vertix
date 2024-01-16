@@ -1,0 +1,89 @@
+:root {
+  /* Background */
+  --tabBgCol: url("../assets/bgImg.png");
+  --pgBgCol: linear-gradient(180deg, #676767 0%, #343434 59.5%, #0A0A0A 99.5%);
+  /* Window Properties */
+  --windowCol: #1e1e1e80;
+  --windowBlur: 1vh;
+  --windowBrightness: 1;
+  --windowContrast: 1.1;
+  --frontElementCol: #28282833;
+  /* Text Properties */
+  --textCol: #fff;
+  --textColSec: #fff9;
+  --textColTet: #fff5;
+  --linkCol: #6b23b3;
+  --textSize: 1rem;
+  --textSizeSec: 0.7rem;
+  --textSizeTet: 0.5rem;
+  /* Shadow Properties */
+  --shadowCol: rgba(0, 0, 0, 0.75);
+  --shadowRad: 0px 0px 4px 1px;
+  /* Margins */
+  --uniMargin: 1rem;
+  --topBarThickness: 5rem;
+  /* Border */
+  --borderRad: 0.75rem;
+  --borderThickness: 0.2rem;
+  --borderCol: #9c9c9c5b;
+  /* Transitions */
+  --transitionSpeed: 0.4s;
+  --fastTransitionSpeed: 0.1s;
+  /* Menu */
+  --menuButtonCol: var(--textCol);
+  /* Tab Properties */
+  --tabCol: #25252ad1;
+  --tabBlur: 1vh;
+  --tabBrightness: 1;
+  --tabContrast: 1.1;
+  --activeTabCol: #25252ad1;
+  --activeTabBlur: calc(var(--tabBlue) / 8);
+  --activeTabBrightness: var(--tabBrightness);
+  --activeTabContrast: var(--tabContrast);
+  --doParticles: 1;
+}
+
+/* wierd bar thing
+*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  color: var(--textCol);
+  user-select: none;
+  background: var(--tabBgCol);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.lowerBg {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  bottom: 0;
+  height: calc(100vh - var(--topBarThickness));
+  background: var(--pgBgCol);
+}
+
+.seperationBar {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  margin: 0;
+  outline: none;
+  padding: none;
+  border: 0.175rem solid #fff;
+  filter: drop-shadow(0px -2px 8px #fff) drop-shadow(0px -8px 10px rgba(255, 255, 255, 0.25));
+  top: var(--topBarThickness);
+  background: var(--pgBgCol);
+}
+
+.mainWindow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: var(--uniMargin, 1rem);
+  width: calc(100vw - var(--uniMargin, 1rem) * 2);
+}/*# sourceMappingURL=index.css.map */
