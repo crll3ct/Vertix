@@ -1,7 +1,7 @@
 :root {
   /* Background */
-  --tabBgCol: url("../assets/bgImg.png");
-  --pgBgCol: linear-gradient(180deg, #676767 0%, #343434 59.5%, #0A0A0A 99.5%);
+  --tabBgCol: #1C1B22;
+  --pgBgCol: #2B2A33;
   /* Window Properties */
   --windowCol: #1e1e1e80;
   --windowBlur: 1vh;
@@ -22,6 +22,7 @@
   /* Margins */
   --uniMargin: 1rem;
   --topBarThickness: 5rem;
+  --tabThickness: 7.5rem;
   /* Border */
   --borderRad: 0.75rem;
   --borderThickness: 0.2rem;
@@ -43,8 +44,6 @@
   --doParticles: 1;
 }
 
-/* wierd bar thing
-*/
 html,
 body {
   margin: 0;
@@ -74,10 +73,10 @@ body {
   margin: 0;
   outline: none;
   padding: none;
-  border: 0.175rem solid #fff;
-  filter: drop-shadow(0px -2px 8px #fff) drop-shadow(0px -8px 10px rgba(255, 255, 255, 0.25));
+  border: 1.5px solid #fff;
   top: var(--topBarThickness);
   background: var(--pgBgCol);
+  filter: drop-shadow(0px 1px 8px #fff) drop-shadow(0px 4px 5px rgba(255, 255, 255, 0.5));
 }
 
 .mainWindow {

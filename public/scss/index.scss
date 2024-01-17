@@ -1,8 +1,5 @@
 @import "_variables.scss";
 
-/* wierd bar thing
-*/
-
 html,
 body {
     margin: 0;
@@ -32,12 +29,12 @@ body {
     margin: 0;
     outline: none;
     padding: none;
-    border: 0.175rem solid #fff;
-    filter:
-        drop-shadow(0px -2px 8px #fff)
-        drop-shadow(0px -8px 10px rgba(255, 255, 255, 0.25));
+    border: 1.5px solid #fff;
     top: var(--topBarThickness);
     background: var(--pgBgCol);
+    filter:
+        drop-shadow(0px 1px 8px #fff)
+        drop-shadow(0px 4px 5px rgba(255, 255, 255, 0.5));
 }
 
 .mainWindow {

@@ -4,6 +4,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vertix</title>
         <link rel="stylesheet" href="css/index.css" />
+
+        <!-- UV things -->
+        <script src="/uv/uv.bundle.js"></script>
+        <script src="/uv/uv.config.js"></script> <!-- added defer as before the script would load before the form would load -->
+        <script src="/dyn/dynamic.config.js"></script>
+
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker.register("/sw.js", {
+                        scope: "/",
+                    });
+                });
+            }
+        </script>
+
+        <!-- sets the favicon, correctly -->
+        <link
+            rel="icon"
+            href="assets/xorro-favicon-hypr-3.png"
+            id="image/x-icon"
+        />
+
+        <!-- dynamically sets the favicon based on device color scheme -->
+        <script>
+            function updateFavicon() {
+                const favicon = document.getElementById("image/x-icon");
+                if (
+                    window.matchMedia &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                ) {
+                    favicon.href = "assets/xorro-favicon-dark-2.png";
+                } else {
+                    favicon.href = "assets/xorro-favicon-light-2.png";
+                }
+            }
+            updateFavicon();
+        </script>
+
+        <script
+            src="https://kit.fontawesome.com/df4e45b628.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <div class="lowerBg"></div>

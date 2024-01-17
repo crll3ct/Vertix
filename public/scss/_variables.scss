@@ -1,7 +1,7 @@
 :root {
     /* Background */
-    --tabBgCol: url('../assets/bgImg.png');
-    --pgBgCol: linear-gradient(180deg, #676767 0%, #343434 59.5%, #0A0A0A 99.5%);
+    --tabBgCol: #1C1B22;
+    --pgBgCol: #2B2A33;
 
     /* Window Properties */
     --windowCol: #1e1e1e80;
@@ -26,6 +26,7 @@
     /* Margins */
     --uniMargin: 1rem;
     --topBarThickness: 5rem;
+    --tabThickness: 7.5rem;
 
     /* Border */
     --borderRad: 0.75rem;
