@@ -20,9 +20,10 @@
   --shadowCol: rgba(0, 0, 0, 0.75);
   --shadowRad: 0px 0px 4px 1px;
   /* Margins */
-  --uniMargin: 1rem;
-  --topBarThickness: 5rem;
-  --tabThickness: 7.5rem;
+  --uniMargin: 0.5rem;
+  --topBarThickness: 7.5rem;
+  --tabThickness: 2.7rem;
+  --topControlsThickness: 2.3rem;
   /* Border */
   --borderRad: 0.75rem;
   --borderThickness: 0.2rem;
@@ -62,7 +63,7 @@ body {
   left: 0;
   width: 100vw;
   bottom: 0;
-  height: calc(100vh - var(--topBarThickness));
+  height: calc(100vh - var(--tabThickness));
   background: var(--pgBgCol);
 }
 
@@ -74,15 +75,18 @@ body {
   outline: none;
   padding: none;
   border: 1.5px solid #fff;
-  top: var(--topBarThickness);
+  top: var(--tabThickness);
   background: var(--pgBgCol);
   filter: drop-shadow(0px 1px 8px #fff) drop-shadow(0px 4px 5px rgba(255, 255, 255, 0.5));
 }
 
 .mainWindow {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: var(--uniMargin, 1rem);
-  width: calc(100vw - var(--uniMargin, 1rem) * 2);
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: var(--uniMargin, 1rem) !important;
+  width: calc(100vw - var(--uniMargin, 1rem) * 2) !important;
+  border-radius: 0.4375rem !important;
+  background: #1c1b22 !important;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25) inset !important;
 }/*# sourceMappingURL=index.css.map */

@@ -52,10 +52,23 @@
         <div class="lowerBg"></div>
         <div class="tabContainer"></div>
         <hr class="seperationBar"></hr>
-        <iframe class="mainWindow"></iframe>
+        <iframe class="mainWindow" id="eruda"></iframe>
+
+        <!-- Eruda Scripts -->
+        <script src="js/eruda.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                eruda.init({
+                    container: document.getElementById("eruda"),
+                    useShadowDom: true,
+                    autoScale: true,
+                    defaults: {
+                        displaySize: 50,
+                        transparency: 0.9,
+                        theme: 'Monokai Pro'
+                    }
+                });
+            });
+        </script>
     </body>
-    <script src="js/eruda.js"></script>
-    <script>
-        eruda.init();
-    </script>
 </html>
