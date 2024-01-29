@@ -52,7 +52,10 @@
         <div class="lowerBg"></div>
         <div class="tabContainer"></div>
         <hr class="seperationBar"></hr>
-        <iframe class="mainWindow" id="eruda" src="https://example.com"></iframe>
+        <div class="erudaMainWindowContainer" id="eruda">
+        </div>
+        <iframe class="mainWindow" src="https://example.com"></iframe>
+
         <input class="searchBar" name="Search the internet, uncensored"></input>
 
         <!-- Eruda Scripts -->
@@ -64,8 +67,8 @@
                     useShadowDom: true,
                     autoScale: true,
                     defaults: {
-                        displaySize: 50,
-                        transparency: 0.9,
+                        displaySize: 20,
+                        transparency: 0.8,
                         theme: 'Monokai Pro'
                     }
                 });

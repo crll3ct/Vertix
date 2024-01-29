@@ -1,11 +1,11 @@
 self.__dynamic$config = {
-    prefix: "/service/",
+    prefix: "/p/dyn/",
     encoding: "xor",
     mode: "production",
     logLevel: 3,
     bare: {
         version: 2,
-        path: "/bare/",
+        path: "https://crystalnetwork.me/bare/",
     },
     tab: {
         title: "Service",
@@ -22,6 +22,7 @@ self.__dynamic$config = {
             inject: null,
         },
     },
+    /*
     block: [
         "trk.pinterest.com",
         "widgets.pinterest.com",
@@ -125,4 +126,5 @@ self.__dynamic$config = {
         "static.ads-twitter.com",
         "ads-api.twitter.com",
     ],
+    */
 };

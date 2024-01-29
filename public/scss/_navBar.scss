@@ -1,0 +1,91 @@
+#urlInput {
+    position: absolute;
+    left: calc(var(--waybarHeight) - (var(--waybarHeight) / 3));
+    height: calc(((var(--waybarHeight))) - var(--uniMargin) * 6);
+    width: calc((var(--urlInputLength)));
+    margin: 0;
+    border: transparent;
+    font-family: 'Open Sans';
+    font-size: calc((1.75vw * (var(--waybarHeight) / 12.5vh) / 1.25) * (var(--waybarHeight) / 10vh));
+    color: var(--menuButtonCol);
+    border-radius: 100vw;
+    padding: calc(var(--uniMargin) / 4);
+    padding-left: 0.75em;
+    background-color: var(--frontElementCol);
+    transition: all var(--transitionSpeed) ease;
+    &:focus, &:hover {
+        outline: none;
+        background-color: var(--hoverFrontElementCol);
+    }
+}
+
+
+#reloadButton {
+    position: absolute;
+    left: calc(var(--waybarHeight) / 3 - var(--uniMargin));
+    margin: 0;
+    padding: 0;
+    background-color: #00000000;
+    border: transparent;
+    font-family: 'Open Sans';
+    font-size: calc(var(--waybarHeight) / 4);
+    color: var(--menuButtonCol);
+    transition: all var(--transitionSpeed) ease;
+    &:hover {
+        cursor: pointer;
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+#searchButton {
+    position: absolute;
+    left: calc(var(--urlInputLength) + var(--waybarHeight) - 1em - (var(--waybarHeight) / 3));
+    transform: translateY(-3%) translateX(-50%);
+    margin: 0;
+    padding: 0;
+    background-color: #00000000;
+    border: transparent;
+    font-family: 'Open Sans';
+    font-size: calc(var(--waybarHeight) / 4);
+    color: #7C7777;
+    font-weight: 100;
+    transition: all var(--transitionSpeed) ease;
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-3%) translateX(-50%) scale(1.2);
+    }
+}
+
+#settingsButton {
+    position: absolute;
+    right: calc(var(--uniMargin) * 2);
+    margin: 0;
+    padding: 0;
+    background-color: #00000000;
+    border: transparent;
+    font-family: 'Open Sans';
+    font-size: calc(var(--waybarHeight) / 4);
+    color: var(--menuButtonCol);
+    transition: all var(--transitionSpeed) ease;
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-1%) rotate(360deg) scale(1.2);
+    }
+}
+
+.searchBar {
+    position: absolute;
+    left: calc(var(--iconThickness) * 3 + var(--uniMargin) * 4);
+    top: calc(var(--tabThickness) + var(--uniMargin));
+    height: var(--topControlsThickness);
+    width: calc(100vw - (var(--iconThickness) * 5 + var(--uniMargin) * 6));
+    z-index: 2;
+    border-radius: 1.5625rem;
+    border: 2px solid rgba(40, 40, 40, 0.2);
+    background: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(--tabBlur);
+    &:focus {
+        outline: none;
+    }
+    color: var(--textCol);
+}

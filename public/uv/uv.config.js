@@ -1,6 +1,6 @@
 /*global Ultraviolet*/
 self.__uv$config = {
-    prefix: '/uv/service/',
+    prefix: '/p/uv/',
     bare: 'https://crystalnetwork.me/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
