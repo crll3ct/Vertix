@@ -52,11 +52,13 @@
         <div class="lowerBg"></div>
         <div class="tabContainer"></div>
         <hr class="seperationBar"></hr>
-        <div class="erudaMainWindowContainer" id="eruda">
+        <div class="erudaMainWindowContainer" id="eruda" style="pointer-events: none !important;">
         </div>
-        <iframe class="mainWindow" src="https://example.com"></iframe>
+        <iframe class="mainWindow" id="mainWindow"></iframe>
 
-        <input class="searchBar" name="Search the internet, uncensored"></input>
+        <input class="searchBar" id="urlInput" name="Search the internet, uncensored"></input>
+        <div class="searchButton fa-brands fa-discord" id="searchButton"></div>
+        <div class="reloadButton fa-brands fa-reddit" id="reloadButton"></div>
 
         <!-- Eruda Scripts -->
         <script src="js/eruda.js"></script>
@@ -75,4 +77,5 @@
             });
         </script>
     </body>
+    <script src="js/proxy.js"></script>
 </html>

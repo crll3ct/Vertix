@@ -1,25 +1,3 @@
-#urlInput {
-    position: absolute;
-    left: calc(var(--waybarHeight) - (var(--waybarHeight) / 3));
-    height: calc(((var(--waybarHeight))) - var(--uniMargin) * 6);
-    width: calc((var(--urlInputLength)));
-    margin: 0;
-    border: transparent;
-    font-family: 'Open Sans';
-    font-size: calc((1.75vw * (var(--waybarHeight) / 12.5vh) / 1.25) * (var(--waybarHeight) / 10vh));
-    color: var(--menuButtonCol);
-    border-radius: 100vw;
-    padding: calc(var(--uniMargin) / 4);
-    padding-left: 0.75em;
-    background-color: var(--frontElementCol);
-    transition: all var(--transitionSpeed) ease;
-    &:focus, &:hover {
-        outline: none;
-        background-color: var(--hoverFrontElementCol);
-    }
-}
-
-
 #reloadButton {
     position: absolute;
     left: calc(var(--waybarHeight) / 3 - var(--uniMargin));

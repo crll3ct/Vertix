@@ -1,5 +1,5 @@
-importScripts("/dynamic/dynamic.config.js");
-importScripts("/dynamic/dynamic.worker.js");
+importScripts("/dyn/dynamic.config.js");
+importScripts("/dyn/dynamic.worker.js");
 
 importScripts("/uv/uv.bundle.js");
 importScripts("/uv/uv.config.js");
